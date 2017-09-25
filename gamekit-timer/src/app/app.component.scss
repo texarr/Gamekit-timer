@@ -6,6 +6,16 @@
   &--light_bg {
     background-color: #1e2633;
   }
+
+  &--rounded {
+    border: 1px solid #37465e;
+    border-radius: 5px;
+  }
+
+  &--shadow {
+    -webkit-box-shadow: 1px 5px 5px 0 #000;
+    box-shadow: 1px 5px 5px 1px #000;
+  }
 }
 
 .flexible {
