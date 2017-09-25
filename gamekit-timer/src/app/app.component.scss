@@ -1,0 +1,36 @@
+.counter_container {
+  height: 100%;
+  background: #151c27;
+  padding: 40px 35px;
+
+  &--light_bg {
+    background-color: #1e2633;
+  }
+}
+
+.flexible {
+  &_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  &_element {
+
+    &--center {
+      -ms-flex-item-align: center;
+      align-self: center;
+    }
+  }
+}
+
+.counter_content {
+  color: lighten(#1e2633, 60%);
+  -webkit-transform: translateX(-40%);
+  transform: translateX(-32%);
+  letter-spacing: 1.7px;
+
+  p {
+    margin-bottom: 0;
+  }
+}
