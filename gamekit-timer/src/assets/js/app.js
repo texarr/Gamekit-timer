@@ -2,7 +2,7 @@ $(document).ready(function() {
   // date variables set to show demo content only
   var now = new Date(Date.now());
   var minutes = now.getMinutes() + 5;
-  var formatted = now.getHours() + ":" + minutes + ":" + now.getSeconds();
+  var formatted = now.getHours() + ":" + minutes;
   // ********************************************
 
   var date = '2017/09/25 ' + formatted;
@@ -39,6 +39,7 @@ $(document).ready(function() {
   $('#progress-bar').circleProgress({
     value: progressValue,
     size: 150,
+    animationStartValue: 1,
     fill: {
       "color": fillColor
     }
