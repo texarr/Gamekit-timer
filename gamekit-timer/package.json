@@ -23,6 +23,9 @@
     "@angular/router": "^4.2.4",
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
+    "jquery": "^3.2.1",
+    "jquery-circle-progress": "^1.2.2",
+    "jquery-countdown": "^2.2.0",
     "rxjs": "^5.4.2",
     "zone.js": "^0.8.14"
   },

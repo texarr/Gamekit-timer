@@ -22,7 +22,12 @@
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
         "styles.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/jquery-countdown/dist/jquery.countdown.min.js",
+        "../node_modules/jquery-circle-progress/dist/circle-progress.min.js",
+        "../src/assets/js/app.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

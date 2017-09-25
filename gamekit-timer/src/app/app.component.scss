@@ -44,3 +44,33 @@
     margin-bottom: 0;
   }
 }
+
+.countdown {
+  color: lighten(#1e2633, 60%);
+}
+
+.counter_timer,
+.counter_progress-bar {
+  height: 132px;
+  width: 132px;
+}
+
+.canvas--absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.counter_progress-bar.relative {
+  position: relative;
+}
+
+.countdown.absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
