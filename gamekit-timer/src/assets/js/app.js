@@ -1,11 +1,13 @@
 $(document).ready(function() {
   // date variables set to show demo content only
   var now = new Date(Date.now());
-  var minutes = now.getMinutes() + 5;
+  var day = now.getDate();
+  var minutes = now.getMinutes() + 1;
   var formatted = now.getHours() + ":" + minutes;
   // ********************************************
 
-  var date = '2017/09/25 ' + formatted;
+  // date = '2017/09/28 10:00';
+  var date = '2017/09/' + day + ' ' + formatted;
   var fillColor = "#536d99";
   var startSeconds = 0;
   var currentSeconds = 1;
@@ -30,6 +32,14 @@ $(document).ready(function() {
       // animating progress
       if (progressInitiation) {
         $('#progress-bar').circleProgress('value', progressValue); // set value to 0.75 & animate the change
+        // looking for animation finish
+        $('#progress-bar').on('circle-animation-end', function(event) {
+          if (currentSeconds === 0) {
+            $(this).css('display', 'none');
+            $('.counter_content').find('p').text('Konkurs rozstrzygnięty. Poczekaj na następną edycję.');
+            progressInitiation = false;
+          }
+        });
       }
 
     }
@@ -52,4 +62,5 @@ $(document).ready(function() {
   $('#progress-bar').find('canvas').css('top', '50%');
   $('#progress-bar').find('canvas').css('left', '50%');
   $('#progress-bar').find('canvas').css('transform', 'translate(-50%, -50%)');
+
 });
