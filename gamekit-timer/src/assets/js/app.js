@@ -2,19 +2,20 @@ $(document).ready(function() {
   // date variables set to show demo content only
   var now = new Date(Date.now());
   var day = now.getDate();
+  var month = now.getMonth(); month++;
   var minutes = now.getMinutes() + 1;
   var formatted = now.getHours() + ":" + minutes;
   // ********************************************
 
-  // date = '2017/09/28 10:00';
-  var date = '2017/09/' + day + ' ' + formatted;
+  // date = '2017/10/13 23:49';
+  var date = '2017/'+ month + '/' + day + ' ' + formatted;
   var fillColor = "#536d99";
   var startSeconds = 0;
   var currentSeconds = 1;
   var progressValue;
   var progressInitiation = false;
 
-  $('#countdown').countdown(date , function(event) {
+  $('#countdown-timer').countdown(date , function(event) {
     // console.log(event);
     if (startSeconds === 0) {
       startSeconds = event.offset.totalSeconds;
